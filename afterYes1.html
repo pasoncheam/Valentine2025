@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fading Turquoise Background</title>
+  <style>
+    /* Apply the fading turquoise background */
+    body {
+      margin: 0;
+      height: 200vh;
+      background: linear-gradient(to bottom, #40e0d0, #ffffff);
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; /* Align content to the top */
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    /* Container for the images at the top */
+    .image-row {
+      display: flex;
+      justify-content: space-around;
+      width: 80%; /* Controls the width of the row */
+      margin-top: 10px; /* Adds slight margin from the top */
+    }
+
+    .image-row img {
+      max-width: 18%; /* Ensures the images have the same size */
+      height: auto;
+      /*border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/
+    }
+
+    /* Style for the centered text */
+    h1 {
+        font-size: 4em;
+        font-family: cursive;
+        letter-spacing: 2px;
+        color: #ffffff;
+        margin-top: 200px;
+    }
+
+    h3 {
+        font-family: cursive;
+        letter-spacing: 2px;
+        color: #ffffff;
+        margin-top: 200px;
+    }
+
+    /* Placeholder image styling at the bottom */
+    .image-container {
+      position: absolute;
+      margin-top: 600px;
+    }
+
+    .image-container img {
+      max-width: 60%;
+      height: auto;
+    }
+
+    /* Styling for the turquoise rectangle */
+    .turquoise-rectangle {
+      width: 400px; /* Adjust the width as needed */
+      height: 400px; /* Adjust the height as needed */
+      background-color: #40e0d0;
+      margin-top: 595px;
+      z-index: 10;
+    }
+
+    .cursor-heart {
+      position: absolute;
+      font-size: 30px;
+      color: rgba(189, 30, 89, 0.7);
+      animation: cursorHeartAnimation 1s forwards;
+      pointer-events: none;
+    }
+
+    @keyframes cursorHeartAnimation {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(0);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Row with 5 evenly spaced images at the top -->
+  <div class="image-row">
+    <img src="C:\Users\user\Documents\2025Valentine\Ask-out-your-Valentine\images\Hangyodon1.webp" alt="Image 1">
+    <img src="C:\Users\user\Documents\2025Valentine\Ask-out-your-Valentine\images\Hangyodon2.png" alt="Image 2">
+    <img src="C:\Users\user\Documents\2025Valentine\Ask-out-your-Valentine\images\Hangyodon3.png" alt="Image 3">
+    <img src="C:\Users\user\Documents\2025Valentine\Ask-out-your-Valentine\images\Hangyodon4.png" alt="Image 4">
+    <img src="C:\Users\user\Documents\2025Valentine\Ask-out-your-Valentine\images\Hangyodon5.png" alt="Image 5">
+  </div>
+
+  <!-- Centered text -->
+  <h1>❤️~สุขสันต์วันวาเลนไทน์ Faboo~❤️</h1>
+  <h3>Do you like the Papui theme? 5555525255665,<br>
+        This webpage contains all our sweet memories togetherrr, scroll over the pics to see the message underneathh
+</h3>
+
+  <!-- Placeholder image at the bottom -->
+  <div class="image-container">
+    <img src="C:\Users\user\Documents\2025Valentine\Ask-out-your-Valentine\images\camera2.png" alt="Camera Image">
+  </div>
+
+  <!-- Turquoise rectangle under the camera image -->
+  <div class="turquoise-rectangle"></div>
+
+<script>
+  document.addEventListener('mousemove', (e) => {
+      const heart = document.createElement('div');
+      heart.classList.add('cursor-heart');
+      heart.innerHTML = '🩵';
+      heart.style.left = `${e.pageX}px`;
+      heart.style.top = `${e.pageY}px`;
+      document.body.appendChild(heart);
+
+      // Remove the heart after the animation
+      setTimeout(() => {
+        heart.remove();
+      }, 1000);
+    });
+</script>
+</body>
+</html>
