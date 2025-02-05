@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fading Turquoise Background</title>
+  <title>For Fern</title>
   <style>
     /* Apply the fading turquoise background */
     body {
       margin: 0;
-      height: 200vh;
-      background: linear-gradient(to bottom, #40e0d0, #ffffff);
+      min-height: 100vh;
+      background: linear-gradient(to bottom, #69f4e6, #ffffff);
       font-family: 'Arial', sans-serif;
       display: flex;
       flex-direction: column;
@@ -17,6 +17,7 @@
       align-items: center;
       text-align: center;
       color: white;
+      
     }
 
     /* Container for the images at the top */
@@ -44,30 +45,110 @@
     }
 
     h3 {
+        font-size: 25px;
         font-family: cursive;
         letter-spacing: 2px;
         color: #ffffff;
-        margin-top: 200px;
+        margin-top: 50px;
+    }
+
+    .small-box {
+        width: 1100px;
+        padding: 10px;
+        border: 2px solid black;
+        background-color: #08b3e2;
+        border-radius: 10px;
     }
 
     /* Placeholder image styling at the bottom */
     .image-container {
       position: absolute;
-      margin-top: 600px;
+      margin-top: 1000px;
     }
 
     .image-container img {
-      max-width: 70%;
+      max-width: 80%;
       height: auto;
     }
 
-    /* Styling for the turquoise rectangle */
     .turquoise-rectangle {
-      width: 400px; /* Adjust the width as needed */
-      height: 400px; /* Adjust the height as needed */
+      width: 500px; /* Adjust width */
+      height: 7500px; /* Adjust height */
       background-color: #40e0d0;
-      margin-top: 595px;
-      z-index: 10;
+      margin-top: 565px;
+      z-index: 0;
+      display: flex;
+      flex-direction: column; /* Stacks images vertically */
+      align-items: center; /* Centers images horizontally */
+      padding: 20px 0; /* Adds space at the top and bottom */
+    }
+
+    .inside-image {
+      max-width: 80%; /* Adjust size of images */
+      height: auto;
+      margin-bottom: 100px; /* Space between the images */
+    }
+
+    .photo-container {
+      position: relative;
+      width: 300px; /* Adjust as needed */
+      height: 300px; /* Adjust as needed */
+      perspective: 1000px; /* For 3D effect */
+      margin-bottom: 150px;
+    }
+
+    .photo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden; /* Hide back of element */
+      transition: transform 0.5s ease; /* Smooth transition */
+    }
+
+    .photo-front {
+      transform: rotateY(0deg);
+       /* Replace with your image URL */
+      background-size: cover;
+      background-position: center;
+      border: 5px solid #042a71; /* Add border around the photo */
+      border-radius: 10px; /* Optional: Add rounded corners */
+    }
+
+    .photo-front img {
+      width: 100%;   /* Make image fill the width of the container */
+      height: 100%;  /* Make image fill the height of the container */
+      object-fit: cover; /* Ensure the image covers the area without distortion */
+    }
+
+    .photo-back {
+      transform: rotateY(180deg);
+      background-color: #f8d7da; /* Light pink background for message */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      color: #880d1e; /* Darker pink for text */
+      padding: 20px;
+      text-align: center;
+    }
+
+    .photo-container:hover .photo-front {
+      transform: rotateY(180deg);
+    }
+
+    .photo-container:hover .photo-back {
+      transform: rotateY(0deg);
+    }
+
+    .message {
+      font-size: 10px;
+    }
+
+    .bottom-message {
+      font-size: 50px;
+      font-family: 'Brush Script MT', cursive;
     }
 
     .cursor-heart {
@@ -77,6 +158,7 @@
       animation: cursorHeartAnimation 1s forwards;
       pointer-events: none;
     }
+    
 
     @keyframes cursorHeartAnimation {
       0% {
@@ -103,23 +185,184 @@
 
   <!-- Centered text -->
   <h1>❤️~สุขสันต์วันวาเลนไทน์ Faboo~❤️</h1>
-  <h3>Do you like the Papui theme? 5555525255665,<br>
-        This webpage contains all our sweet memories togetherrr, scroll over the pics to see the message underneathh
-</h3>
+  <div class="small-box">
+    <h3>Do you like the Papui theme? 5555525255665,<br>
+      Happy Valentines day my lovee, this is another website for you. Since boo liked Papui (your baby) and it looked cute, 
+      I thought of making the website Papui themed with our fav colourr. Baby, meeting you at UCSI was one the best thing that happend to me.
+      Being with you, you bring happiness and smiles into my life, teach me to love myself more, and meet your your fam too❤️.
+      I can also be my complete self around without fear of judgemental, coz you accepted me for for who I am, a bear🐻.
+        Some say love is like a dance, sometimes I lead, soemtimes you lead, sometimes we may step on each others feet,
+        but the important thing is we kept dancing and look out for each other, and I am the happiest man to dance with you.
+        With this Valentine webpage, boo enjoy all the compiled pictures and memories wehave togetherr!<br>
+
+          This webpage contains all our sweet memories togetherrr, scroll over the pics to see the message underneathh
+    </h3>
+ </div>
 
   <!-- Placeholder image at the bottom -->
   <div class="image-container">
     <img src="images\camera2.png" alt="Camera Image">
   </div>
 
-  <!-- Turquoise rectangle under the camera image -->
-  <div class="turquoise-rectangle"></div>
+ <!-- Turquoise rectangle containing two images stacked on top of each other -->
+<div class="turquoise-rectangle">
+
+  <div class="photo-container">
+    <div class="photo photo-front"><img src="images/1.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
+    <div class="photo photo-back">
+      <div class="message">I love you more than words can say!</div>
+    </div>
+  </div>
+
+  <div class="photo-container">
+    <div class="photo photo-front"><img src="images/2.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
+    <div class="photo photo-back">
+      <div class="message">I love you more than words can say!</div>
+    </div>
+  </div>
+
+  <div class="photo-container">
+    <div class="photo photo-front"><img src="images/2point2.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
+    <div class="photo photo-back">
+      <div class="message">I love you more than words can say!</div>
+    </div>
+  </div>
+
+  <div class="photo-container">
+    <div class="photo photo-front"><img src="images/3.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
+    <div class="photo photo-back">
+      <div class="message">I love you more than words can say!</div>
+    </div>
+  </div>
+
+  <div class="photo-container">
+    <div class="photo photo-front"><img src="images/4.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
+    <div class="photo photo-back">
+      <div class="message">I love you more than words can say!</div>
+    </div>
+  </div>
+
+  <div class="photo-container">
+    <div class="photo photo-front"><img src="images/5.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
+    <div class="photo photo-back">
+      <div class="message">I love you more than words can say!</div>
+    </div>
+  </div>
+
+  <div class="photo-container">
+    <div class="photo photo-front"><img src="images/6.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
+    <div class="photo photo-back">
+      <div class="message">I love you more than words can say!</div>
+    </div>
+  </div>
+
+  <div class="photo-container">
+    <div class="photo photo-front"><img src="images/7.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
+    <div class="photo photo-back">
+      <div class="message">I love you more than words can say!</div>
+    </div>
+  </div>
+
+  <div class="photo-container">
+    <div class="photo photo-front"><img src="images/8.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
+    <div class="photo photo-back">
+      <div class="message">I love you more than words can say!</div>
+    </div>
+  </div>
+
+  <div class="photo-container">
+    <div class="photo photo-front"><img src="images/9.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
+    <div class="photo photo-back">
+      <div class="message">I love you more than words can say!</div>
+    </div>
+  </div>
+
+  <div class="photo-container">
+    <div class="photo photo-front"><img src="images/10.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
+    <div class="photo photo-back">
+      <div class="message">I love you more than words can say!</div>
+    </div>
+  </div>
+
+  <div class="photo-container">
+    <div class="photo photo-front"><img src="images/11.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
+    <div class="photo photo-back">
+      <div class="message">I love you more than words can say!</div>
+    </div>
+  </div>
+
+  <div class="photo-container">
+    <div class="photo photo-front"><img src="images/12.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
+    <div class="photo photo-back">
+      <div class="message">I love you more than words can say!</div>
+    </div>
+  </div>
+
+  <div class="photo-container">
+    <div class="photo photo-front"><img src="images/13.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
+    <div class="photo photo-back">
+      <div class="message">I love you more than words can say!</div>
+    </div>
+  </div>
+
+  <div class="photo-container">
+    <div class="photo photo-front"><img src="images/14.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
+    <div class="photo photo-back">
+      <div class="message">I love you more than words can say!</div>
+    </div>
+  </div>
+
+  <div class="photo-container">
+    <div class="photo photo-front"><img src="images/15.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
+    <div class="photo photo-back">
+      <div class="message">I love you more than words can say!</div>
+    </div>
+  </div>
+
+  <div class="photo-container">
+    <div class="photo photo-front"><img src="images/16.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
+    <div class="photo photo-back">
+      <div class="message">I love you more than words can say!</div>
+    </div>
+  </div>
+  
+  <div class="photo-container">
+    <div class="photo photo-front"><img src="images/17.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
+    <div class="photo photo-back">
+      <div class="message">I love you more than words can say!</div>
+    </div>
+  </div>
+
+  <div class="photo-container">
+    <div class="photo photo-front"><img src="images/18.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
+    <div class="photo photo-back">
+      <div class="message">I love you more than words can say!</div>
+    </div>
+  </div>
+
+  <div class="photo-container">
+    <div class="photo photo-front"><img src="images/19.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
+    <div class="photo photo-back">
+      <div class="message">I love you more than words can say!</div>
+    </div>
+  </div>
+
+  <div class="bottom-message">More to comee</div>
+</div>
+
+<!-- Countdown Timer Section -->
+<div id="countdown" style="font-size: 3em; color: #ffffff; margin-top: 50px; padding: 20px; background-color: #42a5f5; border-radius: 10px; margin-bottom: 50px;">
+  <p>~ Estimated countdown to next kiss💋 ~</p>
+  <div id="timer"></div>
+</div>
+  
+  
 
 <script>
   document.addEventListener('mousemove', (e) => {
       const heart = document.createElement('div');
       heart.classList.add('cursor-heart');
-      heart.innerHTML = '🩵';
+      heart.innerHTML = '❤️';
       heart.style.left = `${e.pageX}px`;
       heart.style.top = `${e.pageY}px`;
       document.body.appendChild(heart);
@@ -129,6 +372,34 @@
         heart.remove();
       }, 1000);
     });
+
+  // Set the date we're counting down to (example: Valentine's Day)
+  var countDownDate = new Date("May 5, 2025 00:00:00").getTime();
+
+  // Update the countdown every 1 second
+  var x = setInterval(function() {
+
+  // Get the current time
+  var now = new Date().getTime();
+  
+  // Find the distance between now and the countdown date
+  var distance = countDownDate - now;
+  
+  // Time calculations for days, hours, minutes, and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  // Display the result
+  document.getElementById("timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+  
+  // If the countdown is finished, display a message
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("timer").innerHTML = "It's Valentine's Day!";
+  }
+}, 1000);
 </script>
 </body>
 </html>
