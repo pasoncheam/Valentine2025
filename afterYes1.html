@@ -158,7 +158,47 @@
       animation: cursorHeartAnimation 1s forwards;
       pointer-events: none;
     }
-    
+    .raindrop {
+            position: absolute;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(100vh);
+            }
+        }
+   
+/* Button styling */
+.attractive-btn {
+            background-color: #f8394c; /* Green background */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-family: 'Arial', sans-serif;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: 0.3s ease;
+            margin-top: 100px;
+        }
+
+        /* Hover effects */
+        .attractive-btn:hover {
+            background-color: #45a049; /* Darker green */
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Active effects */
+        .attractive-btn:active {
+            background-color: #388e3c; /* Even darker green */
+            transform: translateY(2px);
+        }
+
 
     @keyframes cursorHeartAnimation {
       0% {
@@ -173,8 +213,7 @@
   </style>
 </head>
 <body>
-
-  <!-- Row with 5 evenly spaced images at the top -->
+   <!-- Row with 5 evenly spaced images at the top -->
   <div class="image-row">
     <img src="images\Hangyodon1.webp" alt="Image 1">
     <img src="images\Hangyodon2.png" alt="Image 2">
@@ -210,145 +249,212 @@
   <div class="photo-container">
     <div class="photo photo-front"><img src="images/1.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
     <div class="photo photo-back">
-      <div class="message">I love you more than words can say!</div>
+      <div class="message">This is the time boo met mee at UCSI. I love this pic coz boo is spying on me
+        (eventhough boo said boo not55555). Boo be like, that fuud(Pason) is soo delishh.</div>
     </div>
   </div>
 
   <div class="photo-container">
     <div class="photo photo-front"><img src="images/2.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
     <div class="photo photo-back">
-      <div class="message">I love you more than words can say!</div>
+      <div class="message">I think this is one of the very first pic of me and u tgtt❤️, so sweet rightt. Your smile is soo beautiful.
+         But I am too shy to tell you that time😂. So glad that after on you accepted me as your bear Boyfriend.🐻 
+         Hope you still liekd the gift I gave you that dayy, 55555555. Looking forward to reunite with the others MSU peeps duay.
+      </div>
     </div>
   </div>
 
   <div class="photo-container">
     <div class="photo photo-front"><img src="images/2point2.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
     <div class="photo photo-back">
-      <div class="message">I love you more than words can say!</div>
+      <div class="message">This pic is just me, coz I think Im handsome in this pic, WHAHAHAHAHAHAH.
+         This makes me miss the moment so much to moment you guys are hereee, and also 
+          one of the happiest days at UCSI for me. Never expect that my dream came through
+      </div>
     </div>
   </div>
 
   <div class="photo-container">
     <div class="photo photo-front"><img src="images/3.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
     <div class="photo photo-back">
-      <div class="message">I love you more than words can say!</div>
+      <div class="message">The is the moment we met at BKK tgt for the first timee. I had such a great time with you,
+        (but forgot P'Mew's name 555555). Meeting you was the best christmas gift ever eventhough we are not official yet that time.
+         Having gift giving at the iconsiam christmas tree, watching an indoor waterfall, walking through the ground floor 
+          market, going to jood fair that have a castle, that day was truly magical. Eventhough met you left than half a day,
+           its worth every second of it.
+      </div>
     </div>
   </div>
 
   <div class="photo-container">
     <div class="photo photo-front"><img src="images/4.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
     <div class="photo photo-back">
-      <div class="message">I love you more than words can say!</div>
+      <div class="message">This us U and Me wif my parents sitting on the boat on the Chao Praya riverr😂.
+         Imagine you tell your friends that your BF bought his parents on the first time meeting at BKK tgt, 5555555.
+          Btw on that day, I really felt that they liked you more than me coz boo is such a good gurl. And also boo during intern
+           not as stress as now so poor boo too. (definitely not forgeting telling the tourist the wrong direction story too, ei ei ei😈)
+      </div>
     </div>
   </div>
 
   <div class="photo-container">
     <div class="photo photo-front"><img src="images/5.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
     <div class="photo photo-back">
-      <div class="message">I love you more than words can say!</div>
+      <div class="message">This is boo reading my gift for youuuu, narakkk chai maii😍. I still have the pants you gave me and I loved
+         ittt. Gonna be more fit to look good in it! Im also happi that boo loved my gifttt. Maybe the purse is too small for boo coz
+          boo have soo much money.
+      </div>
     </div>
   </div>
 
   <div class="photo-container">
     <div class="photo photo-front"><img src="images/6.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
     <div class="photo photo-back">
-      <div class="message">I love you more than words can say!</div>
+      <div class="message">Even after I went back to msia, you still send your daily pics to me bout your life which I loved.
+         Boo is super cute intern, this also made me realized time goes so fast, but not as fast as me going on a plane to Thailand.
+          Happi to be able to know boo daily life isss.
+      </div>
     </div>
   </div>
 
   <div class="photo-container">
     <div class="photo photo-front"><img src="images/7.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
     <div class="photo photo-back">
-      <div class="message">I love you more than words can say!</div>
+      <div class="message">Other than you daily life, I also get to know about boo more as boo share your childhood and
+         personal life too. This pic is super suayyy, boo is superstar jingg. I felt good coz boo is comfortable to share your personal 
+          life with pabooo. wanna try on this shirt again? 555555
+      </div>
     </div>
   </div>
 
   <div class="photo-container">
     <div class="photo photo-front"><img src="images/8.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
     <div class="photo photo-back">
-      <div class="message">I love you more than words can say!</div>
+      <div class="message">I liked this pic especially😂, looks like a Mexican Ferns. I loved your sense of humour
+         coz it brings a smile on my face everyday, even on tough and stress days.
+      </div>
     </div>
   </div>
 
   <div class="photo-container">
     <div class="photo photo-front"><img src="images/9.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
     <div class="photo photo-back">
-      <div class="message">I love you more than words can say!</div>
+      <div class="message">After around 8 months (so fast too), we finally meet againn. This was also the first time I solo
+         travelled to Thailand. It was so special for us to get to hangout as a cute couple in person for the very first timee.
+          Still so thanking for boo to accept me for who I am. To be honest, I was super shy at that time, especially when hugging boo
+           and holding your little handss. But slowly I grow comfortable with uu🐻❤️, till now, I can even share my "thoughts" wif you😏.
+      </div>
     </div>
   </div>
 
   <div class="photo-container">
     <div class="photo photo-front"><img src="images/10.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
     <div class="photo photo-back">
-      <div class="message">I love you more than words can say!</div>
+      <div class="message">And eventhough sometimes there are hard times between us, Im so grateful to have boo because you
+         went through it and work it out together with me. Through good times and also struggles, our bond becomes stronger⭐. 
+      </div>
     </div>
   </div>
 
   <div class="photo-container">
     <div class="photo photo-front"><img src="images/11.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
     <div class="photo photo-back">
-      <div class="message">I love you more than words can say!</div>
+      <div class="message">And in this pic, thank you for your fam and especially P'Eve for bringing me to CU. It was a 
+         dream come true for me as I always heard good things bout here and always see its images in the Internet and I finally got to go there.
+          Thanks to her fam too for treating me super gooddd.And P'Eve dad for driving me home safelyy. 
+      </div>
     </div>
   </div>
 
   <div class="photo-container">
     <div class="photo photo-front"><img src="images/12.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
     <div class="photo photo-back">
-      <div class="message">I love you more than words can say!</div>
+      <div class="message">This is the pic of my last day during my 4 day visitt, can't believe its August last year, so fast. 
+         I missed boo so much that day evethough i did not cry and boo did a super cry. Glad we had our time tgt too, especially at
+          Horsamut restaurantt❤️❤️. And also loved the time in the hotel doing unboxing😏 the Capybara, I bring it to intern work
+           everydayy to remind of our guud timee~
+      </div>
     </div>
   </div>
 
   <div class="photo-container">
     <div class="photo photo-front"><img src="images/13.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
     <div class="photo photo-back">
-      <div class="message">I love you more than words can say!</div>
+      <div class="message">After I went back againz for my internship, we contacted each other a lot tooo,
+         boo shared lots of your moments wif me, and I even took lots of screenshots in which this is my favourite😂.
+          Thanks for boo for tolerating me during on of my most stressful time handling all the work and new things during
+           internship.🙏 Love boo mak makkk
+      </div>
     </div>
   </div>
 
   <div class="photo-container">
     <div class="photo photo-front"><img src="images/14.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
     <div class="photo photo-back">
-      <div class="message">I love you more than words can say!</div>
+      <div class="message">After 4 months of intern, I visit Thailand againzz (from Intern salary😂), hahahaah
+         I was so surprised to be able to meet your fam during this visit, even having my mom with me tooo❤️.
+          I am soo happy that boo loved the gift I gave uu. Since its a longer visit, I get the chance to do more things with boo
+           and we did! Btw, the cake at the place, super delishhh, thanks for suggesting that placeee, and 
+            traveleld so farr to meet with me🤩
+      </div>
     </div>
   </div>
 
   <div class="photo-container">
     <div class="photo photo-front"><img src="images/15.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
     <div class="photo photo-back">
-      <div class="message">I love you more than words can say!</div>
+      <div class="message">This is the day you gave me my gifttt❤️, I was surprised coz I did not expect such a nice 
+        expensive customized pen at all😂 (and sorry to P'Eve who became Steve). And this is also the last day I met boo
+         for the visit. Even so, its still an awesome day coz you and P'Eve are in it.
+      </div>
     </div>
   </div>
 
   <div class="photo-container">
     <div class="photo photo-front"><img src="images/16.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
     <div class="photo photo-back">
-      <div class="message">I love you more than words can say!</div>
+      <div class="message">And for this, I cant thank you enough, really did not expect a surprise early birthday celebration at all
+         like dangss, another surprise birthday in years, last time was during 13 years old in high school. I am also 
+          so glad to meet gurl boss P'Mew at that time and thank you soo much for her gift. She gives off girl boss aura.
+      </div>
     </div>
   </div>
   
   <div class="photo-container">
     <div class="photo photo-front"><img src="images/17.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
     <div class="photo photo-back">
-      <div class="message">I love you more than words can say!</div>
+      <div class="message">And this is one of my most favourite pics and activity wif boo during my visit🤩.
+         I decided to do it coz boo has adventured most of bkk and this was unique to both of uss. I was nervous at first coz
+          afraid that it might be not as fun as a activity for us a couple, but so glad to turned out super welll. Our official first
+           couple shirtt. The vid that boo edited was super romantic, I loved it!
+      </div>
     </div>
   </div>
 
   <div class="photo-container">
     <div class="photo photo-front"><img src="images/18.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
     <div class="photo photo-back">
-      <div class="message">I love you more than words can say!</div>
+      <div class="message">This was the moment I visit P'Tum place with boo and famm. I didt expect this at all.
+         It was such a unique experience for meee and I am so glad I get to bond wif your fam tooo, also other relatives, your mom
+          and your dad😂(he was super nice coz I am good boy). I also get to understand boo life better and do things wif boo,
+           ei ei eiiii. And secretly touch your butt. 
+      </div>
     </div>
   </div>
 
   <div class="photo-container">
     <div class="photo photo-front"><img src="images/19.jpg" alt="Hangyodon1" /></div> <!-- This will display the image -->
     <div class="photo photo-back">
-      <div class="message">I love you more than words can say!</div>
+      <div class="message">Lastly, I loved this pic, coz its a pic of me with your fam, and you being comfortable to 
+         open me up to your familyyy❤️, Happy Valentines Day babeee
+      </div>
     </div>
   </div>
 
-  <div class="bottom-message">More to comee</div>
+  <div class="bottom-message">More in futuree</div>
 </div>
+
+<a href="flower.html" class="attractive-btn">🌹Your flowerr🌹</a>
 
 <!-- Countdown Timer Section -->
 <div id="countdown" style="font-size: 3em; color: #ffffff; margin-top: 50px; padding: 20px; background-color: #42a5f5; border-radius: 10px; margin-bottom: 50px;">
@@ -356,9 +462,13 @@
   <div id="timer"></div>
 </div>
   
+
   
 
 <script>
+
+
+  
   document.addEventListener('mousemove', (e) => {
       const heart = document.createElement('div');
       heart.classList.add('cursor-heart');
@@ -400,6 +510,35 @@
     document.getElementById("timer").innerHTML = "It's Valentine's Day!";
   }
 }, 1000);
+
+const imageUrls = [
+        'images/marklee1.png', // Replace with your image URLs
+        'images/marklee2.png',
+        'images/marklee3.png',
+        'images/marklee4.jpg'
+            ];
+
+    function createRaindrop() {
+        const img = document.createElement('img');
+        img.src = imageUrls[Math.floor(Math.random() * imageUrls.length)];
+        img.classList.add('raindrop');
+        img.style.left = `${Math.random() * window.innerWidth}px`;
+        img.style.animationDuration = `${Math.random() * 2 + 2}s`; // Random speed between 2s and 4s
+        img.style.animationDelay = `${Math.random() * 5}s`; // Random delay
+
+        img.style.width = '80px';  // Set the width of the image to 30px
+        img.style.height = '80px'; // Set the height of the image to 30px
+
+        document.body.appendChild(img);
+        
+        // Remove the image once it reaches the bottom
+        setTimeout(() => {
+            img.remove();
+        }, 4000); // Remove after animation time
+    }
+
+    // Create raindrops at regular intervals
+    setInterval(createRaindrop, 1000); // Creates a new raindrop every 100ms
 </script>
 </body>
 </html>
