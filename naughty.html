@@ -57,6 +57,24 @@
             font-size: 18px;
             color: #d0d0d0; /* Lighter message color initially */
         }
+        .cursor-heart {
+      position: absolute;
+      font-size: 30px;
+      color: rgba(189, 30, 89, 0.7);
+      animation: cursorHeartAnimation 1s forwards;
+      pointer-events: none;
+    }
+
+    @keyframes cursorHeartAnimation {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(0);
+        opacity: 0;
+      }
+    }
     </style>
 </head>
 <body>
@@ -85,6 +103,19 @@
             messageDiv.textContent = "You must be 18 or older to access this site.";
             messageDiv.style.color = "red"; 
         });
+        document.addEventListener('mousemove', (e) => {
+      const heart = document.createElement('div');
+      heart.classList.add('cursor-heart');
+      heart.innerHTML = '😈';
+      heart.style.left = `${e.pageX}px`;
+      heart.style.top = `${e.pageY}px`;
+      document.body.appendChild(heart);
+
+      // Remove the heart after the animation
+      setTimeout(() => {
+        heart.remove();
+      }, 1000);
+    });
     </script>
 
 </body>
