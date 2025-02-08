@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Image</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column; /* Arrange items in a column */
+            justify-content: center; /* Horizontally center */
+            align-items: center; /* Vertically center */
+            min-height: 100vh; /* Ensure full viewport height */
+            margin: 0; /* Remove default body margins */
+        }
+
+        img {
+            max-width: 60%; /* Image shouldn't exceed viewport width */
+            max-height: 60%; /* Image shouldn't exceed viewport height */
+            display: block; /* Prevents a small space below the image */
+            margin-bottom: 20px; /* Add some space below the image */
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            background-color: #333; /* Darker button background */
+            color: white;
+        }
+
+        #backButton {
+            background-color: #4CAF50; /* Green */
+        }
+    </style>
+</head>
+<body>
+
+    <img src="images\hornyjail.png" alt="Horny jail pic">
+    <a href="afterYes1.html"><button id="backButton">Back</button></a>
+
+</body>
+</html>
