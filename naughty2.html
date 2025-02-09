@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centered Image</title>
+    <title>Fern Horny Jail</title>
     <style>
         body {
             display: flex;
@@ -59,7 +59,29 @@
 
     <img src="images\hornyjail.png" alt="Horny jail pic">
     <a href="afterYes1.html"><button id="backButton">Back</button></a>
+    <audio id="bg-music" autoplay loop>
+      <source src="audio\clown.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+  </audio>
+  
+  
  <script>
+
+document.addEventListener("DOMContentLoaded", function () {
+        var audio = document.getElementById("bg-music");
+
+        // Try playing automatically (some browsers allow muted autoplay)
+        audio.play().catch(function() {
+            console.log("Autoplay blocked, waiting for user interaction.");
+        });
+
+        // Ensure playback starts when the user interacts (click, scroll, etc.)
+        document.addEventListener("click", function playAudioOnce() {
+            audio.play();
+            document.removeEventListener("click", playAudioOnce);
+        });
+    });
+
      document.addEventListener('mousemove', (e) => {
       const heart = document.createElement('div');
       heart.classList.add('cursor-heart');
